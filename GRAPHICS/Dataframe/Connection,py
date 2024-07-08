@@ -1,0 +1,14 @@
+#mounted the drive
+from google.colab import drive
+drive. mount('/content/drive')
+
+#read in csv 
+
+import pandas as pd
+read_file = pd.read_excel ('/content/drive/MyDrive/Manish.xlsx')
+
+read_file.to_csv ("Manish.csv",index = None,header=True)
+
+df = pd.DataFrame(pd.read_csv("Manish.csv"))
+
+df
